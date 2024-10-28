@@ -13,7 +13,7 @@ with open(output_file, "w") as f:
     # 写入命令列表
     f.write("commands=(\n")
     for cmd in commands:
-        f.write(f'  "{cmd}"\n')
+        f.write(f"  {cmd}\n")  # 不使用双引号
     f.write(")\n\n")
     
     # 写入循环执行代码
